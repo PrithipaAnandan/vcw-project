@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "helvetica";
+  src: url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("woff"),
+       url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"),
+       url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "helvetica";
+}
+
+
+@keyframes rotate-up {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  .rotate {
+    animation: rotate-up 1s linear forwards;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateX(0deg);
+    }
+    25% {
+      transform: rotateX(90deg);
+    }
+    50% {
+      transform: rotateX(180deg);
+    }
+    75% {
+      transform: rotateX(270deg);
+    }
+    100% {
+      transform: rotateX(360deg);
+    }
+  }
+  
+  .rotate-animation {
+    animation: rotate 4s ease-in infinite;
+  }
+  
+/* rotation animation */
+  body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Helvetica Neue;
+}
+
+.container
+{
+    position: relative;
+    perspective: 25000px;
+    transform-style: preserve-3d;
+    animation: rotate 7s linear infinite;
+    height: 120px;
+ backface-visibility: hidden;   
+}
+
+@keyframes rotate
+{
+    0%
+{
+    transform: rotateX(0deg);
+}
+
+100%
+{
+    transform: rotateX(-360deg);
+} 
+}
+
+.container div{
+    position: absolute;
+    color: white;
+    height: 120px;
+    width: 900px;
+    padding: 10px 30px;
+    margin: -0px 0;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 90px;
+    border-radius: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.container div:nth-child(4) {
+  transform: rotateX(90deg) translateZ(30px);
+  background-color: #3366cc;
+  position: relative; /* Enable positioning for the pseudo-element */
+  /* color: transparent; Hide the text */
+}
+
+.container div:nth-child(4)::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3); /* Light background sheet effect */
+  border-radius: 3%; /* Match the parent’s border-radius */
+  z-index: -1; /* Place the sheet behind the text */
+}
+
+.container div:nth-child(1)
+{
+    transform: rotateX(360deg) translateZ(50px);
+    background-color: #3366cc;
+}
+
+.container div:nth-child(2)
+{
+    transform: rotateX(270deg) translateZ(50px);
+    background-color: #3366cc;
+}
+
+.container div:nth-child(3)
+{
+    transform: rotateX(180deg) translateZ(50px);
+    background-color: #3366cc;
+}
+
+.container div:nth-child(4)
+{
+    transform: rotateX(90deg) translateZ(50px);
+    background-color:  #3366cc;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #3658D3;
+  color: white;
+  font-size: 24px;
+}
+
+/* Image container styling */
+.image-container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Text styling */
+h1 {
+  text-align: center;
+  font-weight: 700;
+  color: black;
+}
+
+.text-large {
+  font-size: 3rem;
+}
+
+.text-small {
+  font-size: 2rem;
+}
+
+/* Responsive styling for various screen widths */
+
+/* Large screens (desktop) */
+/* @media (min-width: 1024px) {
+  .text-large {
+    font-size: 4rem;
+  }
+  .container div {
+    width: 20%;
+  }
+} */
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .image-container {
+    width: 150px;
+    height: 150px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .container div {
+    width: 40%;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+  .image-container {
+    width: 120px;
+    height: 120px;
+  }
+  h1 {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+  .container div {
+    width: 100%;
+    text-align: center;
+  }
+}
