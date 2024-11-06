@@ -3,10 +3,9 @@ import client2 from "../assets/client2.png";
 import client3 from "../assets/client3.png";
 import client4 from "../assets/client4.png";
 import client5 from "../assets/client1.png";
-
 function ClientLogo() {
-  return (
-    <div className="my-16 mx-5 md:mx-10 lg:mx-20 overflow-hidden">
+  return (<>
+      <div className="my-16 mx-5 md:mx-10 lg:mx-20 overflow-hidden">
       <div className="flex space-x-8 sm:space-x-12 md:space-x-16 lg:space-x-28 animate-scroll-left">
         <img
           src={client1}
@@ -35,7 +34,9 @@ function ClientLogo() {
         />
       </div>
     </div>
-  );
+
+</>
+);
 }
 
 export default ClientLogo;

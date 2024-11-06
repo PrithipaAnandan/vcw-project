@@ -52,8 +52,6 @@
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
     font-family: Helvetica Neue;
 }
@@ -88,7 +86,6 @@
     width: 900px;
     padding: 10px 30px;
     margin: -0px 0;
-    text-align: center;
     font-size: 40px;
     margin-left: 90px;
     border-radius: 3%;
@@ -151,7 +148,6 @@
 
 /* Header styling */
 header {
-  text-align: center;
   padding: 20px;
   background-color: #3658D3;
   color: white;
@@ -168,7 +164,6 @@ header {
 
 /* Text styling */
 h1 {
-  text-align: center;
   font-weight: 700;
   color: black;
 }
