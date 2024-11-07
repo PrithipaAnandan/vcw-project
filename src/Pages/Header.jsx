@@ -18,14 +18,13 @@ function Header() {
 
   return (
     <>
-      <div className="flex items-center justify-between px-6 sm:px-10 lg:px-40 py-5 my-9">
-        <img
-          src={logo}
-          alt="Logo"
-          className="w-20 h-12 cursor-pointer"
-          onClick={() => navigate("/")}
-        />
-
+      <div className="flex  items-center mx-20 justify-between px-6 sm:px-10 lg:px-20 py-5 my-9">
+      <img
+      src={logo}
+      alt="Logo"
+      className="w-24 h-16 cursor-pointer object-contain"
+      onClick={() => navigate("/")}
+    />
         {/* Desktop Menu */}
         <div className="hidden md:flex mr-20 space-x-9 lg:space-x-9 text-base lg:text-lg text-black">
           <button className="hover:underline whitespace-nowrap" onClick={() => navigate("/aboutus")}>

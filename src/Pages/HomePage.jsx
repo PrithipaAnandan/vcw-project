@@ -53,7 +53,7 @@ function HomePage() {
   return (
     <>
       <Header />
-      <div className="flex flex-col md:flex-row items-center justify-center mx-auto space-x-0 md:space-x-4">
+      <div className="flex w-[1450px]  flex-col md:flex-row items-center justify-center mx-auto space-x-0 md:space-x-4">
   <div className="relative w-32 h-32 md:w-48 md:h-48">
     <img
       src={images[imageIndex]}
@@ -75,7 +75,7 @@ function HomePage() {
         <div>Manual Testing</div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center mt-10 space-y-4 md:space-y-0 md:space-x-4">
+      <div className="flex flex-col mx-20  md:flex-row justify-center items-center mt-10 space-y-4 md:space-y-0 md:space-x-4">
   <h1 className="text-6xl md:text-6xl ">In Our Business</h1>
 
   <div>

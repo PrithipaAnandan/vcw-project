@@ -10,8 +10,9 @@ function Footer() {
     const navigate = useNavigate();
     return (
         <>
+        <div className='w-[1510px]'>
         <Testimonial/>
-        <div className="bg-[#3658D3] text-white w-[1510px] py-10 px-6 md:px-12 lg:px-20">
+        <div className="bg-[#3658D3] w-[1510px] text-white  py-10 px-6 md:px-12 lg:px-20">
             <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row md:justify-between items-center">
                 
                 {/* Left Section: Logo and Tagline */}
@@ -71,6 +72,7 @@ function Footer() {
                 <p>Copyright 2023 </p>
                 <p>• 3DPrinter, All Rights Reserved</p>
             </div>
+        </div>
         </div>
         </>);
 }

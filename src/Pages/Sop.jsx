@@ -5,13 +5,13 @@ import Header from "./Header";
 function Sop() {
   return (
     <>
-      <div className="mx-4 ">
+      <div className="mx-4 sm:mx-10 lg:mx-20">
         <Header />
         <TagLine7 />
       </div>
 
-      <div className=" mt-6">
-        <h1 className="text-3xl sm:text-4xl text-left lg:text-5xl font-bold  mx-4 sm:mx-10 lg:mx-72">
+      <div className=" mt-6 mx-20">
+        <h1 className="text-3xl sm:text-4xl text-left lg:text-5xl font-bold mx-4 sm:mx-10 lg:mx-72">
           Standard Operating Procedure
         </h1>
       </div>

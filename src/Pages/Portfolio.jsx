@@ -70,7 +70,7 @@ const Portfolio = () => {
     <>
       <Header />
       <TagLine6 />
-      <div className="text-black mx-4 sm:mx-10 lg:mx-20">
+      <div className="text-black mx-4  sm:mx-10 lg:mx-20">
         <div className="mx-auto px-6 py-8">
           <div className="text-center md:text-left mx-2 md:mx-20 mb-8">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Portfolio</h2>
