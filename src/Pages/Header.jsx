@@ -61,7 +61,7 @@ function Header() {
           <button className="hover:underline whitespace-nowrap" onClick={() => navigate("/contactus")}>
             Contact Us
           </button>
-          <button className="hover:bg-blue-400 border px-2 py-1 rounded-xl bg-blue-300" onClick={() => navigate("/hire")}>
+          <button className="hover:bg-blue-600 border px-2 py-1 text-white rounded-xl bg-blue-500" onClick={() => navigate("/hire")}>
             Appoinment
           </button>
         </div>

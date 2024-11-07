@@ -1,9 +1,9 @@
 function TagLine6() {
     return (
-      <div className="h-screen w-full flex justify-center items-center overflow-hidden bg-gray-50">
+      <div className="h-screen w-full flex justify-center items-center mb-20 overflow-hidden">
         <div className="w-[1400px] h-full px-5 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* First Column for Text */}
-          <div className="flex flex-col items-center md:items-start justify-center">
+          <div className="flex flex-col  items-center md:items-start justify-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center md:text-left leading-tight">
               "Code that Wonders, <br />
               <span className="md:mx-6">Solutions that Inspire."</span>
